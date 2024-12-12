@@ -84,25 +84,6 @@ Gemini-RAG/
 
 ---
 
-## 🖼️ Screenshots
-
-### Gradio Interface
-*Coming soon!*
-
----
-
-## 🤝 Contributions
-
-Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit a pull request.
-
----
-
 ## 📜 License
 
 This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
-
----
-
-## 📧 Contact
-
-For any questions or suggestions, please reach out to **Nour Ayman** via GitHub or email.
