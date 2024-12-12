@@ -115,7 +115,7 @@ def launch_gradio(pdf_path, retrieve_source_documents):
     chatbot = PDFChatbot(pdf_path)
 
     with gr.Blocks() as demo:
-        gr.Markdown("## 📄PDF Q&A Chatbot")
+        gr.Markdown("## 📄Training Reproducible DL Models Q&A Chatbot")
         
         with gr.Row():
             with gr.Column():
@@ -136,7 +136,18 @@ def launch_gradio(pdf_path, retrieve_source_documents):
             outputs=[output]
         )
 
-        # Add immediate clearing of input field
+        submit_btn.click(
+            fn=clear_input,
+            inputs=[],
+            outputs=[query_input]
+        )
+
+        query_input.submit(
+            fn=process_query,
+            inputs=[query_input],
+            outputs=[output]
+        )
+
         query_input.submit(
             fn=clear_input,
             inputs=[],
